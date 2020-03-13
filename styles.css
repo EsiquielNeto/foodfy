@@ -14,6 +14,7 @@ header {
     font-size: 22px;
     align-items: center;
     display: flex;
+    margin-bottom: 50px;
 }
 
 header img {
@@ -35,7 +36,6 @@ header img {
 }
 
 .card__content {
-    margin-top: 30px;
     border-radius: 30px;
     background: #FBDFDB;
     width: auto;
@@ -100,6 +100,15 @@ header img {
     margin-top: 5px;
     font-size: 16px;
     color: #777777;
+}
+
+/* === About File === */
+
+article p{
+    /* font-family: Roboto-Regular; */
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
 }
 
 footer {
