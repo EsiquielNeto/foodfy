@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <!-- Roboto Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="/styles.css" rel="stylesheet">
+
+        {% block head %}
+            <title>Home</title>
+        {% endblock %}
+    </head>
+
+    <body>
+        <div class="app-container">
+            <header>
+                <img src="/assets/logo.png" alt="logo">
+                <div class="links">
+                    <a href="/">Home</a>
+                    <a href="/about">Sobre</a>
+                    <a href="/recipes">Receitas</a>
+                </div>
+            </header>
+
+            {% block content %}
+
+            {% endblock%}
+
+        </div>
+
+        <!-- <div id="footer">
+            <p>
+                Todos direitos reservados, receitas Foodfy.
+            </p>
+        </div> -->
+
+        <footer>
+            <p>
+                Todos direitos reservados, receitas Foodfy.
+            </p>
+        </footer>
+    </body>
+</html>
