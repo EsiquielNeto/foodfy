@@ -173,6 +173,93 @@ article p{
     color: #777777;
 }
 
+
+/* === Recipe Detail File === */
+.card__recipe-photo {
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.card__recipe-photo img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.card__recipe-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.card__recipe-title p {
+    color: #777;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.card__recipe-ingredients {
+    color: #444444;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.accordion__head {
+    display: flex;
+    align-items: baseline;
+    background: transparent;
+}
+
+.accordion__button {
+    background: transparent;
+    font-weight: bold;
+    color: #999;
+    margin-left: 15px;
+    font-size: 14px;
+    padding: 1px;
+}
+
+.accordion__button:hover {
+    cursor: pointer;
+    color: #333;
+    transition: color 700ms;
+}
+
+.accordion__content {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.card__recipe-ingredients li{
+    margin-left: 15px;
+}
+
+.card__recipe-preparation {
+    color: #444444;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card__recipe-preparation li{
+    margin-left: 15px;
+}
+
+.card__recipe-information p{
+    color: #444444;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+/* === END === */
+
 footer {
     background: #EEEEEE;
     /* position: relative;

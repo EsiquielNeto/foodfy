@@ -1,0 +1,68 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>{{ recipe.title }}
+    </title>
+{% endblock %}
+
+{% block content %}
+
+    <div class="card__recipe-photo">
+        <img src={{ recipe.image }} alt="imagem {{ recipe.title }}">
+    </div>
+
+    <section>
+        <div class="card__recipe-title">
+            <h1>{{ recipe.title }}</h1>
+            <p>por {{ recipe.author }}</p>
+        </div>
+
+        <div class="card__recipe-ingredients">
+
+            <div class="accordion__head">
+                <h2>Ingredientes</h2>
+                <button class="accordion__button">ESCONDER</button>
+            </div>
+
+            <div class="accordion__content">
+                <ul>
+                    {% for ingredients in recipe.ingredients %}
+                        <li>{{ ingredients }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+         <div class="card__recipe-preparation">
+            <div class="accordion__head">
+                <h2>Modo de preparo</h2>
+                <button class="accordion__button">ESCONDER</button>
+            </div>
+
+            <div class="accordion__content">
+                <ul>
+                    <ol>
+                        {% for prepares in recipe.preparation %}
+                            <li>{{ prepares }}</li>
+                        {% endfor %}
+                    </ol>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card__recipe-information">
+            <div class="accordion__head">
+                <h2>Informações adicionais</h2>
+                <button class="accordion__button">ESCONDER</button>
+            </div>
+
+            <div class="accordion__content">
+                <p>{{ recipe.information }}</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="/scripts.js"></script>
+
+{% endblock %}

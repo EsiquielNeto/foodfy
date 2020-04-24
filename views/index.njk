@@ -5,8 +5,7 @@
         <div class="card__content-intro">
             <h1>As melhores receitas</h1>
             <p>
-                Aprenda a construir os melhores pratos com receitas criadas por profissionais
-                do mundo inteiro.
+                Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
             </p>
         </div>
 
@@ -19,65 +18,18 @@
 
     <section class="cards">
 
-        <div class="card">
-            <div class="card__photo">
-                <img src="./assets/burger.png" alt="burguer">
+        {% for recipe in recipes %}
+            <div class="card">
+                <div class="card__photo">
+                    <img src={{ recipe.image }}>
+                </div>
+                <div class="card__info">
+                    <h4>{{ recipe.title }}</h4>
+                    <p>por
+                        {{ recipe.author }}</p>
+                </div>
             </div>
-            <div class="card__info">
-                <h4>Triplo bacon burguer</h4>
-                <p>por Jorge Relato</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card__photo">
-                <img src="./assets/pizza.png" alt="pizza">
-            </div>
-            <div class="card__info">
-                <h4>Pizza 4 estações</h4>
-                <p>por Fabiana Melo</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card__photo">
-                <img src="./assets/espaguete.png" alt="espaguete">
-            </div>
-            <div class="card__info">
-                <h4>Espaguete ao alho</h4>
-                <p>por Júlia Kinoto</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card__photo">
-                <img src="./assets/lasanha.png" alt="lasanha">
-            </div>
-            <div class="card__info">
-                <h4>Lasanha mac n’ cheese</h4>
-                <p>por Juliano Vieira</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card__photo">
-                <img src="./assets/doce.png" alt="doce">
-            </div>
-            <div class="card__info">
-                <h4>Docinhos pão-do-céu</h4>
-                <p>por Ricardo Golvea</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card__photo">
-                <img src="./assets/asinhas.png" alt="asinhas"asinhas>
-            </div>
-            <div class="card__info">
-                <h4>Asinhas de frango ao barbecue</h4>
-                <p>por Vania Steroski</p>
-            </div>
-        </div>
+        {% endfor %}
 
     </section>
 {% endblock %}
