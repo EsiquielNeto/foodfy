@@ -11,28 +11,38 @@ body {
 }
 
 header {
+    padding: 22px;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 22px;
-    align-items: center;
+}
+
+.links {
+    justify-content: space-between;
+    margin: 0px 360px;
     display: flex;
-    margin-bottom: 50px;
-}
-
-header img {
-    margin-right: 30%;
-}
-
-.app-container{
-    margin: 2% 20% 2% 20%;
-}
-
-.app-container h2 {
-    margin: 40px 0px 40px 0px;
+    align-items: center;
 }
 
 .links a{
+    align-items: center;
     text-decoration: none;
-    color: black;
-    padding: 0px 40px 0px 0px;
+    color: #000000;
+}
+
+.links a + a {
+    margin-left: 36px;
+}
+
+.app-container{
+    height: auto;
+    width: 1200px;
+    margin: 60px auto;
+}
+
+.app-container h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .card__content {
@@ -59,7 +69,6 @@ header img {
 }
 
 .card__content-chef {
-    margin: 50px 120px 0px auto;
     margin-right: 160px;
 }
 
@@ -86,9 +95,15 @@ header img {
     opacity: 0.7;
 }
 
+.card__photo {
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+}
+
 .card__photo img{
     border-radius: 20px;
-    width: 367px;
+    width: 350px;
     height: auto;
 }
 
@@ -115,64 +130,6 @@ article p{
     color: #444444;
     line-height: 28px;
 }
-
-/* === Recipe File === */
-
-.overlay-modal {
-    top: 0;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal {
-    text-align: center;
-    position: relative;
-    height: 413px;
-    width: 660px;
-    background: #FFFFFF;
-    border-radius: 16px;
-    padding: 1%;
-    margin: 25vh auto;
-}
-
-.modal .close-modal {
-    margin-top: 70px;
-}
-
-.modal .close-modal a {
-    font-size: 16px;
-    color: #999999;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.overlay-modal.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal__photo img{
-    height: 230px;
-    width: 630px;
-    border-radius: 15px;
-}
-
-.modal__info h2{
-    font-weight: normal;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-.modal__info p {
-    font-size: 18px;
-    margin: 3px;
-    color: #777777;
-}
-
 
 /* === Recipe Detail File === */
 .card__recipe-photo {
@@ -262,8 +219,9 @@ article p{
 
 footer {
     background: #EEEEEE;
-    /* position: relative;
-    bottom: 0; */
+    /* position: relative; */
+    left: 0;
+    bottom: 0;
     width: 100%;
     height: 62px;
 }

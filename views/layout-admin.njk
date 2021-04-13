@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <!-- Roboto Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="/styles-admin.css" rel="stylesheet">
+
+    {% block head %}
+        <title>Admin</title>
+    {% endblock %}
+</head>
+
+<body>
+    <header>
+        <div class="links">
+            <div class="logo">
+                <img src="/assets/admin-logo.png" alt="logo">
+            </div>
+            <div class="links2"></div>
+        </div>
+    </header>
+
+    <div class="app-container">
+
+        {% block content %}{% endblock%}
+
+        </div>
+    </body>
+</html>

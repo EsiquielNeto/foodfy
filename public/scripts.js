@@ -15,3 +15,39 @@ for (let i = 0; i < accordion.length; i++) {
         }
     });
 }
+
+function addIngredient() {
+    const ingredients = document.querySelector('#ingredients');
+    const fieldContainer = document.querySelectorAll('.ingredient');
+
+    const newFiled = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+    if (newFiled.children[0] == '') {
+        return false;
+    }
+
+    newFiled.children[0].value = '';
+    ingredients.appendChild(newFiled);
+}
+
+function addStep() {
+    const steps = document.querySelector('#steps');
+    const fieldContainer = document.querySelectorAll('.step');
+
+    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+    if (newField.children[0] == '') {
+        return false;
+    }
+
+    newField.children[0].value = '';
+    steps.appendChild(newField);
+}
+
+document
+    .querySelector('.add_ingredients')
+    .addEventListener('click', addIngredient);
+
+document
+    .querySelector('.add_steps')
+    .addEventListener('click', addStep);

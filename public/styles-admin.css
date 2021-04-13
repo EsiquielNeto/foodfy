@@ -1,0 +1,200 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+header {
+    background-color: #000000;
+    padding: 28px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+.links {
+    justify-content: space-between;
+    margin: 0px 360px;
+    display: flex;
+    align-items: center;
+}
+
+.links a{
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links a + a {
+    margin-left: 36px;
+}
+
+.app-container{
+    height: auto;
+    width: 1200px;
+    margin: 60px auto;
+}
+
+.app-container h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card__input-txt {
+    margin-top: 28px;
+}
+
+.card__input-txt div:first-child {
+    font-weight: bold;
+}
+
+.card__recipes {
+    display: flex;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    margin-bottom: 32px;
+}
+
+.card__recipes-item {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 172px auto
+}
+
+.card__recipes-item img {
+    height: 80px;
+    width: 172px;
+    border-radius: 8px;
+}
+
+.card__recipes-info div {
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.add_item {
+    margin-top: 12px;
+    outline-color: transparent;
+    cursor: pointer;
+    background-color: transparent;
+    color: #6558C3;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.add_item a:visited {
+    color: #6558C3;
+}
+
+.card__button{
+    display: flex;
+}
+
+.card__button .btn-del {
+    background: #DC4747;
+    width: 92px;
+}
+
+.card__button .btn-common {
+    background: #6558C3;
+    margin-left: 10px;
+    /* width: 139px; */
+}
+
+input, textarea{
+    font-size: 18px;
+    margin-top: 12px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 100%;
+    height: 49px;
+    padding-left: 10px;
+}
+
+textarea {
+    height: 257px;
+}
+
+input:hover, textarea:hover {
+    border-color: #3484F5;
+}
+
+button[type="submit"],
+a.button {
+    height: 37px;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+a.button {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    background: #6558C3;
+}
+
+/* PAGE SHOW-RECIPE */
+
+.card__title {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__recipe-image {
+    width: 100%;
+    margin: 25px 0px 40px 0px;
+}
+
+.card__recipe-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card__recipe-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.card__recipe-info p:first-child {
+    font-size: 36px;
+    color: #111111;
+    font-weight: bold;
+}
+
+.card__recipe-info p:last-child {
+    font-size: 20px;
+    color: #777777;
+}
+
+.card__recipe-content > h2{
+    font-size: 24px;
+    margin: 40px 0px 25px 0px
+}
+
+.card__recipe-content > p{
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}

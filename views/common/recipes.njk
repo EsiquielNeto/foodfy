@@ -10,9 +10,9 @@
 
         {% for recipe in recipes %}
 
-            <div class="card" id="burger.png">
+            <div class="card">
                 <div class="card__photo">
-                    <a href="/recipes/{{loop.index0}}" target="_blank">
+                    <a href="/recipes/{{loop.index0}}">
                         <img src={{ recipe.image }}>
                     </a>
                 </div>
@@ -25,24 +25,6 @@
         {% endfor %}        
 
     </section>
-
-    {# <div class="overlay-modal">
-        <div class="modal">
-
-            <div class="modal__photo">
-                <img src="" alt="">
-            </div>
-            <div class="modal__info">
-                <h2></h2>
-                <p></p>
-            </div>
-
-            <div class="close-modal">
-                <a href="#">Fechar modal</a>
-            </div>
-
-        </div>
-    </div> #}
 
     <script src="/scripts.js"></script>
 
